@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Java",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-d",
+                "bin",
+                "${workspaceFolder}/src/main/Admin/AdminDashboard.java"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "Run Java",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "-cp",
+                "bin",
+                "main.Admin.AdminDashboard"
+            ],
+            "group": "test" ,
+            "java.project.referencedLibraries": [
+    "lib/*.jar",
+    "path/to/javafx-sdk/lib/*.jar"
+]
+
+        }
+    ]
+    
+}
